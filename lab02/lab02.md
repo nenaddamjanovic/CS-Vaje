@@ -8,6 +8,7 @@
 ## 1. Objective
 
 The aim of this exercise was to recognize how phishing pages work, simulate a credential-harvesting page in an authorized local environment, observe the submitted test data, and identify ways to recognize and prevent phishing attacks.
+*ChatGPT is used to create a report from my own work and screenshots
 
 ## 2. Laboratory setup
 
