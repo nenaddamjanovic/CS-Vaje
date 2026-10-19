@@ -105,4 +105,5 @@ The push completed successfully, updating the remote `main` branch from `4beed1f
 - `lab02.md` — exercise report
 - `01-phishing-page.png` — browser evidence
 - `02-captured-credentials.png` — SET terminal evidence
+- `03-Github-SSH-connection.png` — github ssh connection terminal evidence
 - `login.html` — locally created example form (include the original file from Kali if required)
