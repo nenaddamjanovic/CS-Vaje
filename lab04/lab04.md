@@ -11,6 +11,7 @@
 The purpose of this lab is to practice asymmetric cryptography with GNU Privacy Guard (GPG). The tasks include generating a public/private key pair, exporting and importing public keys, encrypting messages, digitally signing files, decrypting encrypted content, and verifying signatures. The exercise also demonstrates how GPG detects a changed signed message and explains the role of public-key trust.
 
 All identities and messages used for this simulation are laboratory examples. Two independent GPG key stores were used to simulate communication between Nenad (sender) and Alice (recipient).
+*ChatGPT is used to create a report from my own work and screenshots
 
 ## 2. Environment and key generation
 
