@@ -8,6 +8,7 @@
 ## Aim and context
 
 This practical exercise introduces the Linux command-line interface, filesystem navigation, file and folder creation, file reading, copying, moving and deletion. Additional hands-on tasks demonstrate log inspection, file permissions and searching. The course handout also includes SSH connectivity as an objective; an SSH connection was **not demonstrated** in these screenshots.
+*ChatGPT is used to create a report from my own work and screenshots
 
 ## Practical work and evidence
 
