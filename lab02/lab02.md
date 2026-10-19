@@ -72,7 +72,35 @@ Modern services may use phishing-resistant MFA, device and risk checks, account 
 
 The local SET simulation successfully demonstrated how a cloned login form can capture submitted credentials. The experiment was limited to the student's own Kali Linux laboratory and intentionally fake data. It illustrates why users must verify the destination of login forms and why phishing-resistant authentication and user awareness are important.
 
-## 7. Files submitted
+## 7. Git version control and SSH authentication
+
+The lab files were managed in a Git repository (`CS-Vaje`) on the Kali Linux virtual machine and uploaded to the student's GitHub fork. This was also an opportunity to configure secure Git authentication.
+
+Initially, `git commit` failed because Git author information had not yet been configured. The author name and email were set with `git config --global user.name` and `git config --global user.email` (the email used for commits is separate from SSH authentication).
+
+The first `git push origin main` attempt used the repository's HTTPS remote and failed because GitHub does not accept account passwords for Git operations over HTTPS. SSH-key authentication was configured instead:
+
+```bash
+# Create an ED25519 key pair on Kali (choose a passphrase)
+ssh-keygen -t ed25519 -C "Kali-Linux-CS-Vaje"
+
+# Display the PUBLIC key to add under GitHub > Settings > SSH and GPG keys
+cat ~/.ssh/id_ed25519.pub
+
+# Switch the repository remote from HTTPS to SSH
+cd ~/CS-Vaje
+git remote set-url origin git@github.com:nenaddamjanovic/CS-Vaje.git
+
+# Test authentication, then push
+ssh -T git@github.com
+git push origin main
+```
+
+Only the **public** key (`id_ed25519.pub`) was added to GitHub; the private key (`id_ed25519`) remained on Kali. The SSH key was protected with a passphrase, which was requested during `git push`.
+
+The push completed successfully, updating the remote `main` branch from `4beed1f` to **`995c282`**. This confirmed that the lab files were uploaded successfully. Future changes to this report will require another commit and push.
+
+## 8. Files submitted
 
 - `lab02.md` — exercise report
 - `01-phishing-page.png` — browser evidence
