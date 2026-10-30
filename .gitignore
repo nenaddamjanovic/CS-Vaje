@@ -1,3 +1,8 @@
 # Instructor material. Do not commit.
 project/solutions/
 project/solution.md
+
+lab06/secrets.env
+lab06/secrets_decrypted.env
+lab06/attacker_gpg/
+lab06/attacker_simulation/
