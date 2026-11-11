@@ -6,3 +6,9 @@ lab06/secrets.env
 lab06/secrets_decrypted.env
 lab06/attacker_gpg/
 lab06/attacker_simulation/
+
+# Lab 03 - local SSH testing
+lab03/passwords.txt
+lab03/ssh-lab/
+lab03/*.hydra
+lab03/hydra.restore
