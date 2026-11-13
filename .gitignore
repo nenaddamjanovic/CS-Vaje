@@ -12,3 +12,8 @@ lab03/passwords.txt
 lab03/ssh-lab/
 lab03/*.hydra
 lab03/hydra.restore
+
+# Lab 05 - private GPG keyrings
+lab05/alice_gpg/
+lab05/bob_gpg/
+lab05/mallory_gpg/
