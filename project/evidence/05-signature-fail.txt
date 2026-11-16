@@ -1,0 +1,6 @@
+install.sh: FAILED
+sha256sum: WARNING: 1 computed checksum did NOT match
+gpg: Signature made Mon 16 Nov 2026 05:50:59 PM CET
+gpg:                using RSA key E09AFAA406AE85D89B654614D6E4A17158FC82FE
+gpg:                issuer "labops-release@labops.example"
+gpg: Good signature from "LabOps Release <labops-release@labops.example>" [ultimate]
